@@ -32,9 +32,12 @@ GitHub Pages는 `main` 브랜치의 `/(root)`를 게시합니다. 해당 브랜�
 | `styles.css` | 글꼴, 색상, 문서 레이아웃, 반응형, 인쇄 스타일 |
 | `app.js` | 이미지 확대, 이메일 복사, 목차의 현재 위치 표시, 체스 플레이어 제어 |
 | `assets/` | 프로젝트 화면, 글꼴, 아이콘 |
+| `assets/kim-dohyeon-resume.pdf` | 상단에서 다운로드하는 이력서 PDF |
 | `games/chess/` | 체스 WebGL 실행 페이지와 빌드 파일 |
 
 이메일 수정 시 화면 주소, `mailto:` 링크, 복사 버튼의 `data-email`을 함께 변경하세요. GitHub 프로젝트 사이트 하위 경로에 복제할 경우 `og:image`의 절대 주소도 해당 경로에 맞춰 변경해야 합니다.
+
+상단의 `이력서 다운로드`는 같은 사이트에 보관한 PDF를 `김도현_이력서.pdf` 이름으로 저장합니다. 이력서를 갱신할 때는 `assets/kim-dohyeon-resume.pdf`를 새 파일로 교체하면 됩니다.
 
 ## 페이지 안에서 체스 플레이
 

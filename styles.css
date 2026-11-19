@@ -58,3 +58,15 @@
 @media print {
   .chess-play-button, .chess-play-note, .chess-player { display: none !important; }
 }
+
+/* Keep the resume download accessible in the header at narrow widths. */
+.header-inner { height: auto; min-height: 68px; flex-wrap: wrap; column-gap: 16px; row-gap: 8px; padding-block: 10px; }
+.brand { white-space: nowrap; }
+.header-links { margin-left: auto; align-items: center; white-space: nowrap; }
+.header-links .resume-download { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 8px 14px; border: 1px solid var(--accent); border-radius: 5px; color: var(--accent); font-weight: 600; line-height: 1.5; }
+.header-links .resume-download:hover { background: var(--accent); color: #fff; }
+@media (max-width: 600px) {
+  .header-inner { min-height: 61px; }
+  .header-links { gap: 16px; }
+  .header-links .resume-download { padding-inline: 12px; }
+}
