@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e141b">
+  <meta name="robots" content="noindex">
+  <title>Chess 플레이어</title>
+  <link rel="stylesheet" href="player.css">
+  <script src="player.js" defer></script>
+</head>
+<body>
+  <main class="player" aria-label="체스 게임">
+    <canvas id="unity-canvas" width="1280" height="720" tabindex="0" aria-label="로컬 2인용 체스. 말을 선택한 뒤 이동할 칸을 선택하세요."></canvas>
+    <section class="player-overlay" id="loading-panel" aria-labelledby="loading-title" aria-busy="true">
+      <div class="player-card">
+        <p class="eyebrow">CHESS</p>
+        <h1 id="loading-title">체스를 불러오는 중입니다</h1>
+        <p class="description">처음 실행할 때는 시간이 걸릴 수 있습니다.</p>
+        <progress id="loading-progress" max="1" value="0" aria-label="게임 로딩 진행률"></progress>
+        <p class="progress-label" id="loading-label" role="status">준비 중</p>
+      </div>
+    </section>
+    <section class="player-overlay" id="error-panel" aria-labelledby="error-title" hidden>
+      <div class="player-card" role="alert">
+        <p class="eyebrow">CHESS</p>
+        <h2 id="error-title">게임을 불러오지 못했습니다</h2>
+        <p class="description" id="error-message">인터넷 연결을 확인한 뒤 다시 시도해 주세요.</p>
+        <button type="button" id="retry-button">다시 불러오기</button>
+      </div>
+    </section>
+    <noscript><p class="no-script">체스를 플레이하려면 브라우저에서 JavaScript를 허용해 주세요.</p></noscript>
+  </main>
+</body>
+</html>
