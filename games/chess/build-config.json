@@ -1,12 +1,12 @@
 {
-  "loaderUrl": "Build/Chess-WebGL.loader.js",
-  "dataUrl": "Build/Chess-WebGL.data.unityweb",
-  "frameworkUrl": "Build/Chess-WebGL.framework.js.unityweb",
-  "codeUrl": "Build/Chess-WebGL.wasm.unityweb",
+  "loaderUrl": "Build/Chess-d7a3ee7acf70.loader.js",
+  "dataUrl": "Build/Chess-87ea9ecb934a.data.unityweb",
+  "frameworkUrl": "Build/Chess-94664ea68774.framework.js.unityweb",
+  "codeUrl": "Build/Chess-c688a87ebc5f.wasm.unityweb",
   "companyName": "dohnn-0203",
   "productName": "Chess",
-  "productVersion": "1.0",
+  "productVersion": "1.1",
   "unityVersion": "2022.3.62f3",
   "sourceRepository": "https://github.com/dohnn-0203/Chess",
-  "sourceCommit": "08b0693889826594ad478021a93a461360a23308"
+  "sourceCommit": "2a77cd983c1a6a568802972751de52efda07099b"
 }
