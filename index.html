@@ -3,112 +3,63 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f8faff">
-  <title>김도현 | Unity & Frontend Developer</title>
-  <meta name="description" content="데이터를 연결하고, 3D로 이해하게 만드는 개발자 김도현입니다. Unity 산업용 시뮬레이션, 실시간 데이터 파이프라인, React 프론트엔드 프로젝트를 소개합니다.">
+  <meta name="theme-color" content="#ffffff">
+  <title>김도현 | Unity · C# 개발자 포트폴리오</title>
+  <meta name="description" content="Unity · C# 개발자 김도현의 포트폴리오. 산업용 3D 시뮬레이션, 렌더링 최적화, 실시간 데이터 연동, WinForms–Unity 통합 경험과 프로젝트별 기여 내용을 소개합니다.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ko_KR">
-  <meta property="og:title" content="김도현 — 데이터를 연결하고, 3D로 이해하게 만드는 개발자">
-  <meta property="og:description" content="Unity · C# · React · Python. 산업용 시뮬레이션부터 웹 인터페이스까지, 실제 프로젝트와 문제 해결 과정을 소개합니다.">
+  <meta property="og:title" content="김도현 | Unity · C# 개발자 포트폴리오">
+  <meta property="og:description" content="산업용 3D 시뮬레이션과 데이터 시각화. 담당 역할, 구현 내용, 문제 해결 과정을 담았습니다.">
   <meta property="og:image" content="https://dohnn-0203.github.io/assets/windfarm-analysis.webp">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script src="app.js?v=2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">본문으로 바로가기</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#home" aria-label="김도현 포트폴리오 홈"><span class="brand-mark">d.</span><span>김도현<span class="brand-sub">DEVELOPER</span></span></a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="메뉴 열기"><span></span><span></span></button>
-      <nav id="navigation" aria-label="주요 메뉴">
-        <a href="#projects">프로젝트</a><a href="#about">소개</a><a href="#playground">플레이그라운드</a><a class="nav-contact" href="#contact">연락하기</a>
-      </nav>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="#home">김도현 <span>/ Portfolio</span></a><div class="header-links"><a href="https://github.com/dohnn-0203" target="_blank" rel="noopener noreferrer">GitHub</a><a href="mailto:dohnn0203@gmail.com">이메일</a></div></div></header>
+  <main id="main" class="container">
+    <section class="profile" id="home" aria-labelledby="profile-title">
+      <div class="profile-main"><p class="document-label">개발 포트폴리오</p><h1 id="profile-title">김도현 <span>Kim Dohyeon</span></h1><p class="profile-role">Unity · C# 개발자</p><p class="profile-intro">산업용 3D 시뮬레이션과 데이터 시각화를 개발했습니다.<br> 렌더링 최적화, 실시간 데이터 연동, 데스크톱 UI와 Unity 뷰어 통합을 경험했습니다.</p><div class="profile-stack" aria-label="핵심 기술"><span>Unity</span><span>C#</span><span>gRPC</span><span>Python</span><span>WinForms</span></div></div>
+      <div class="profile-contact"><dl><div><dt>EMAIL</dt><dd><a href="mailto:dohnn0203@gmail.com">dohnn0203@gmail.com</a></dd></div><div><dt>GITHUB</dt><dd><a href="https://github.com/dohnn-0203" target="_blank" rel="noopener noreferrer">github.com/dohnn-0203</a></dd></div><div><dt>BLOG</dt><dd><a href="https://what-co.tistory.com/" target="_blank" rel="noopener noreferrer">what-co.tistory.com</a></dd></div></dl></div>
+    </section>
+    <div class="document-layout">
+      <aside class="contents"><p class="contents-title">이 페이지에서</p><nav aria-label="포트폴리오 목차"><a href="#projects">주요 프로젝트</a><a href="#personal">개인 프로젝트</a><a href="#web">추가 실무 경험</a><a href="#experience">경력 · 학력</a><a href="#skills">기술</a><a href="#about">개발자로서</a></nav><p class="contents-note">프로젝트의 담당 범위와<br>구현 내용을 정리했습니다.</p></aside>
+      <div class="document-body">
+        <section class="document-section" id="projects" aria-labelledby="projects-title">
+          <div class="section-heading"><h2 id="projects-title">주요 프로젝트</h2><span>Unity · C# 실무 경험</span></div>
+          <article class="project" id="windfarm">
+            <div class="project-heading"><p class="project-type">국가 R&D</p><h3>부유식 해상 풍력발전단지<br class="wide-only"> 설계 최적화 플랫폼</h3><p class="project-period">2024.09 시작 · 바론시스템</p></div>
+            <p class="project-description">풍력단지 배치, 터빈 시뮬레이션, 해석 결과 확인을 지원하는 산업용 플랫폼입니다.</p>
+            <dl class="project-role"><dt>담당 역할</dt><dd>Unity 기반 3D 시각화 및 시뮬레이션 통합 플랫폼 전담 개발</dd></dl>
+            <div class="project-evidence"><div><h4>주요 기여</h4><ul class="contributions"><li><strong>대규모 씬 렌더링 최적화</strong><p>거리 기반 LOD, 오브젝트 풀링, MaterialPropertyBlock을 적용해 오브젝트와 머테리얼의 렌더링 부하를 관리했습니다.</p></li><li><strong>실시간 데이터 연동</strong><p>Python 백엔드와 협업해 gRPC 통신을 연동하고, MariaDB의 해석 결과를 Unity 차트·테이블에 반영했습니다.</p></li><li><strong>씬과 UI 통합</strong><p>단지 씬·개별 터빈 씬·2D UI를 통합 관리하고, 터빈 선택부터 시뮬레이션 실행과 결과 확인까지 이어지는 흐름을 구현했습니다.</p></li></ul></div><figure class="project-figure"><button class="image-button" data-zoom="assets/windfarm-analysis.webp" data-caption="풍력발전단지 플랫폼 — 3D 시뮬레이션과 해석 결과" aria-label="풍력발전단지 시뮬레이션 화면 확대"><img src="assets/windfarm-analysis.webp" alt="터빈 3D 모델과 해석 결과 차트가 표시된 Unity 플랫폼" width="650" height="365"><span>화면 확대</span></button><figcaption>3D 시뮬레이션 · 실시간 결과 UI</figcaption><div class="project-tags"><span>Unity</span><span>C#</span><span>gRPC</span><span>Python</span><span>MariaDB</span></div></figure></div>
+            <div class="project-outcome"><span>구현 결과</span><p>단지·터빈의 계층적 작업과 해석 결과 확인을 하나의 Unity 플랫폼 안에서 처리하도록 구성했습니다.</p></div>
+            <details class="technical-detail"><summary>설계와 구현 더 보기 <span aria-hidden="true">+</span></summary><div class="detail-body"><h4>화면과 데이터 흐름</h4><p>대시보드, FOMWT 시뮬레이션, 윈드팜 시뮬레이션, 모니터링, 비교분석 탭을 구성했습니다. 싱글톤 패턴 기반 관리 구조로 씬과 UI의 전환을 통합했습니다.</p><div class="data-flow" aria-label="데이터 처리 흐름"><span>해석 결과 / MariaDB</span><span>Python · gRPC</span><span>Unity 차트 · 테이블</span></div><h4>3D 상호작용</h4><p>해양 환경 위 풍력터빈 배치, 무어링라인 물리 시뮬레이션과 터빈 회전 애니메이션을 구현했습니다. 개별 터빈을 선택하면 해당 터빈의 상세 정보로 전환하도록 구성했습니다.</p><figure><img src="assets/windfarm-scene.webp" alt="해양 환경에 배치된 부유식 풍력터빈" width="656" height="370" loading="lazy"><figcaption>해양 환경과 터빈을 표시하는 3D 화면</figcaption></figure><p class="detail-note">후속 과제: 풍황 데이터 전처리 및 HAWC2 해석 결과 연동.</p></div></details>
+          </article>
+          <article class="project" id="mooring">
+            <div class="project-heading"><p class="project-type">SI · 데스크톱 애플리케이션</p><h3>탈착형 계류시스템<br class="wide-only"> 수치해석 통합 GUI</h3><p class="project-period">2025.04 — 2025.05 · 바론시스템</p></div>
+            <p class="project-description">입력 파일 편집, 솔버 실행, 2D·3D 결과 확인을 통합한 수치해석 프로그램입니다.</p>
+            <dl class="project-role"><dt>담당 역할</dt><dd>C# 입력·실행 자동화 및 WinForms–Unity 뷰어 통합</dd></dl>
+            <div class="project-evidence"><div><h4>주요 기여</h4><ul class="contributions"><li><strong>입력과 실행 자동화</strong><p>포트란 입력 파일의 수작업 편집을 DevExpress GUI와 SQLite 연동으로 전환하고, 모델에 따라 3개 솔버를 순차 실행하도록 구현했습니다.</p></li><li><strong>Unity 뷰어 임베딩</strong><p>WinForms 안에 Unity 빌드 뷰어를 통합하고, Pan·Zoom·Rotation을 포함한 3D 조작 기능을 구현했습니다.</p></li><li><strong>좌표와 하중 데이터 시각화</strong><p>Node·Element 좌표를 파싱해 LineRenderer로 계류선을 연결하고, 하중을 5단계 컬러맵과 시간 기반 애니메이션으로 표현했습니다.</p></li></ul></div><figure class="project-figure"><button class="image-button" data-zoom="assets/mooring-viewer.webp" data-caption="계류시스템 수치해석 GUI — WinForms 내 Unity 뷰어" aria-label="계류시스템 통합 뷰어 화면 확대"><img src="assets/mooring-viewer.webp" alt="입력 편집 영역과 Unity 3D 뷰어가 통합된 WinForms 프로그램" width="644" height="347"><span>화면 확대</span></button><figcaption>WinForms에 통합한 Unity 결과 뷰어</figcaption><div class="project-tags"><span>C#</span><span>Unity</span><span>WinForms</span><span>DevExpress</span><span>SQLite</span></div></figure></div>
+            <div class="project-outcome"><span>구현 결과</span><p>입력 편집부터 해석 실행, 수치 테이블과 3D 결과 확인까지 단일 프로그램 안에서 수행하도록 구성했습니다.</p></div>
+            <details class="technical-detail"><summary>설계와 구현 더 보기 <span aria-hidden="true">+</span></summary><div class="detail-body"><h4>해석 워크플로우 통합</h4><p>수치 모델에 따른 솔버의 순차 실행과 다중 실행을 지원했습니다. 입력 데이터는 SQLite에 연동해 관리하고, 결과는 3D 뷰어와 테이블로 함께 제공했습니다.</p><h4>계류선 하중 표현</h4><p>시간과 컬럼을 선택하면 해당 하중에 맞춰 계류선의 색상이 동적으로 변하도록 구현했습니다. 파도 진행 방향도 함께 표시해 환경 조건과 결과를 같이 확인할 수 있도록 했습니다.</p><figure><img src="assets/mooring-model.webp" alt="계류시스템 수치 모델을 확인하는 3D 뷰어" width="626" height="336" loading="lazy"><figcaption>수치 모델의 구조를 확인하는 3D 화면</figcaption></figure></div></details>
+          </article>
+        </section>
+
+        <section class="document-section" id="personal" aria-labelledby="personal-title"><div class="section-heading"><h2 id="personal-title">개인 프로젝트</h2><span>코드와 실행 화면</span></div><div class="personal-project"><div class="personal-title"><h3>WebGL Playground</h3><span>Unity · C# · WebGL</span></div><p>머지 카페, 수박게임, 버블슈터를 모은 브라우저 게임 프로젝트입니다.</p><ul class="plain-list"><li>머지·경제·저장 시스템, 2D 물리, 육각 격자 퍼즐 로직 구현</li><li>게임별 모듈을 asmdef로 분리하고 공통 기능과 테스트 구성</li></ul><div class="project-links"><a class="text-link" href="https://dohnn-0203.github.io/WebGL_Playground/" target="_blank" rel="noopener noreferrer">브라우저에서 플레이</a><a href="https://github.com/dohnn-0203/WebGL_Playground" target="_blank" rel="noopener noreferrer">GitHub 코드</a></div></div><div class="personal-project"><div class="personal-title"><h3>Chess</h3><span>Unity · C#</span></div><p>체스의 규칙과 게임 상태를 나누어 구현한 Unity 프로젝트입니다.</p><ul class="plain-list"><li>합법 이동 표시, 체크·체크메이트·스테일메이트 판정</li><li>캐슬링, 앙파상, 폰 승급 구현 및 규칙·상태·승급 클래스 분리</li></ul><div class="project-links"><a class="text-link" href="https://github.com/dohnn-0203/Chess" target="_blank" rel="noopener noreferrer">GitHub 코드</a></div></div><p class="additional-link">그 밖의 Unity 실험 기록: <a href="https://github.com/dohnn-0203/unity_playground" target="_blank" rel="noopener noreferrer">unity_playground</a></p></section>
+
+        <section class="document-section" id="web" aria-labelledby="web-title"><div class="section-heading"><h2 id="web-title">추가 실무 경험</h2><span>웹 프론트엔드 · 데이터 시각화</span></div><article class="support-project"><div class="support-copy"><h3>해양구조물 모형시험 통합 관리 웹</h3><p class="project-period">2023.09 — 2024.08 · React 프론트엔드 전담</p><ul class="plain-list"><li>시험 조건을 표준화한 React 입력 컴포넌트 구현</li><li>Oracle DB 기반 시험 행렬 생성과 연동하는 단계별 워크플로우 구성</li><li>사용자·자원·기관 정보를 관리하는 어드민 화면 개발</li></ul><p class="support-stack">React · Java / Oracle DB 연동</p></div><figure><button class="image-button" data-zoom="assets/model-test-dashboard.webp" data-caption="해양구조물 모형시험 통합 관리 대시보드" aria-label="모형시험 관리 웹 화면 확대"><img src="assets/model-test-dashboard.webp" alt="모형시험 진행 상태와 업무 정보를 제공하는 대시보드" width="622" height="486" loading="lazy"><span>화면 확대</span></button></figure></article><article class="support-project"><div class="support-copy"><h3>부유식 라이다 실시간 모니터링 웹</h3><p class="project-period">2023.09 — 2023.11 · 데이터 시각화 / 3D 렌더링</p><ul class="plain-list"><li>Python REST API로 풍속·풍향·난류강도 데이터 수신</li><li>장비 특성에 맞는 Rose·Bar·Scatter Chart와 수치 테이블 구현</li><li>Three.js로 부유 지표의 실시간 자세·거동 표현</li></ul><p class="support-stack">React · Python · Three.js · MariaDB</p></div><figure><button class="image-button" data-zoom="assets/lidar-dashboard.webp" data-caption="부유식 라이다 풍황 데이터 모니터링 대시보드" aria-label="라이다 모니터링 웹 화면 확대"><img src="assets/lidar-dashboard.webp" alt="풍속 시계열과 장비별 풍향 장미도를 표시하는 웹 대시보드" width="677" height="477" loading="lazy"><span>화면 확대</span></button></figure></article></section>
+
+        <section class="document-section" id="experience" aria-labelledby="experience-title"><div class="section-heading"><h2 id="experience-title">경력 · 학력</h2></div><div class="history-row"><div class="history-date">2023년 입사</div><div><h3>바론시스템 기업부설연구소 <span>사원</span></h3><p>Unity 기반 산업용 3D 시뮬레이션, 실시간 데이터 파이프라인,<br class="wide-only"> React 웹 프론트엔드 개발. 국가 R&D 및 SI 프로젝트 수행.</p></div></div><div class="history-row"><div class="history-date">2023.01 — 02<br>2023.07 — 08</div><div><h3>바론시스템 기업부설연구소 <span>인턴</span></h3><p>Python 백엔드 및 실험설계(DOE) 알고리즘 연구,<br class="wide-only"> React 프론트엔드 개발 참여.</p></div></div><div class="history-row"><div class="history-date">2020.03 — 2024.02</div><div><h3>대전대학교</h3><p>정보통신·전자공학과 학사</p></div></div></section>
+
+        <section class="document-section" id="skills" aria-labelledby="skills-title"><div class="section-heading"><h2 id="skills-title">기술</h2><span>실제 적용한 경험 중심</span></div><dl class="skills-list"><div><dt>Unity · C#</dt><dd>3D 시뮬레이션, Canvas UI, LineRenderer, LOD, Object Pooling, MaterialPropertyBlock</dd></div><div><dt>데스크톱 앱</dt><dd>.NET, WinForms, DevExpress, Unity 뷰어 임베딩, SQLite 연동</dd></div><div><dt>데이터 · 통신</dt><dd>Python, gRPC, REST API, 해석·계측 데이터 파싱 및 전처리</dd></div><div><dt>웹 · 데이터베이스</dt><dd>React, JavaScript, Three.js / MariaDB, MySQL, SQLite, Oracle DB</dd></div><div><dt>개발 환경 · 협업</dt><dd>Windows Server, Ubuntu / Git, GitHub, SVN / 기술 문서 및 R&D 보고서 작성</dd></div></dl></section>
+
+        <section class="document-section about-section" id="about" aria-labelledby="about-title"><div class="section-heading"><h2 id="about-title">개발자로서</h2></div><p>3D 공간에서 데이터가 어떻게 흐르고 반응하는지에 관심이 있습니다. 데이터를 파싱하고 구조를 설계하는 일부터, 사용자가 결과를 확인하는 화면까지 함께 고민합니다.</p><p>Unity와 Python, 웹을 연결하는 프로젝트를 경험하며 API와 데이터 흐름을 동료와 함께 맞추는 일의 중요성을 배웠습니다. 빠른 구현과 함께, 이후의 확장과 유지보수를 고려하는 개발자가 되고자 합니다.</p><a class="text-link" href="https://what-co.tistory.com/" target="_blank" rel="noopener noreferrer">개발 블로그 읽기</a></section>
+        <footer class="contact-footer" id="contact"><div><p>김도현 · Unity / C# Developer</p><a class="email-link" href="mailto:dohnn0203@gmail.com">dohnn0203@gmail.com</a></div><div><button class="copy-email" data-email="dohnn0203@gmail.com" type="button">이메일 복사</button><p class="copy-status" role="status" aria-live="polite"></p></div></footer>
+      </div>
     </div>
-  </header>
-
-  <main id="main">
-    <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-line"></span> UNITY & FRONTEND DEVELOPER</p>
-          <h1 id="hero-title">데이터를 연결하고,<br><span>3D로 이해하게.</span></h1>
-          <p class="hero-intro">안녕하세요, 개발자 <strong>김도현</strong>입니다.<br>복잡한 데이터를 직관적인 화면으로 바꾸고,<br class="desktop-br"> 시뮬레이션과 웹을 연결하는 시스템을 만듭니다.</p>
-          <div class="hero-actions"><a class="button primary" href="#projects">프로젝트 살펴보기</a><a class="button secondary" href="https://github.com/dohnn-0203" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.82.09-.65.35-1.08.64-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.67-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.83c.85 0 1.71.11 2.51.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.69 1.03 1.58 1.03 2.67 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>GitHub</a></div>
-          <div class="hero-stack" aria-label="주요 기술"><span>Unity</span><span>C#</span><span>React</span><span>Python</span></div>
-        </div>
-        <div class="hero-visual">
-          <div class="visual-topline"><span>FROM DATA TO EXPERIENCE</span><span>3D / REAL-TIME</span></div>
-          <img class="wind-system" src="assets/wind-system.svg" alt="해상 풍력터빈과 계류선을 입체적으로 표현한 구조 일러스트" width="640" height="560" fetchpriority="high">
-          <div class="visual-bottomline"><span>Data</span><i></i><span>Simulation</span><i></i><span>Interface</span></div>
-          <span class="visual-caption">실시간 시뮬레이션에서 얻은 개발의 관점</span>
-        </div>
-      </div>
-      <div class="container focus-strip">
-        <div><span class="focus-icon" aria-hidden="true">◇</span><p><strong>3D Visualization</strong><span>데이터를 공간으로 표현합니다.</span></p></div>
-        <div><span class="focus-icon" aria-hidden="true">⌁</span><p><strong>Real-time Pipeline</strong><span>흐르는 데이터를 화면에 연결합니다.</span></p></div>
-        <div><span class="focus-icon" aria-hidden="true">▤</span><p><strong>Thoughtful Interface</strong><span>복잡한 업무를 명확하게 만듭니다.</span></p></div>
-      </div>
-    </section>
-
-    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
-      <div class="container">
-        <div class="section-heading"><div><p class="eyebrow">SELECTED WORK</p><h2 id="projects-title">문제를 풀어낸 프로젝트</h2></div><p>현장의 데이터가 사용자에게 닿기까지.<br>직접 설계하고 구현한 작업을 소개합니다.</p></div>
-        <div class="project-toolbar"><div class="filters" role="group" aria-label="프로젝트 분야 필터"><button class="filter active" data-filter="all" aria-pressed="true">전체 <span>4</span></button><button class="filter" data-filter="unity" aria-pressed="false">Unity · 3D</button><button class="filter" data-filter="web" aria-pressed="false">Web</button></div><span class="project-count" aria-live="polite">4개의 프로젝트</span></div>
-
-        <div class="projects-grid">
-          <article class="project-card" data-category="unity">
-            <button class="project-image dark-image" data-zoom="assets/windfarm-analysis.webp" data-caption="부유식 해상 풍력발전단지 — 시뮬레이션 분석 화면" aria-label="풍력발전단지 시뮬레이션 화면 확대"><span class="image-label">SIMULATION PLATFORM</span><img src="assets/windfarm-analysis.webp" alt="풍력터빈 3D 시뮬레이션과 실시간 분석 차트를 함께 제공하는 플랫폼" width="650" height="365"><span class="zoom-badge" aria-hidden="true">확대 보기 <b>+</b></span></button>
-            <div class="project-content"><div class="project-meta"><span>국가 R&D · Unity / C#</span><span>2024.09 시작</span></div><h3>부유식 해상 풍력발전단지<br>설계 최적화 플랫폼</h3><p>대규모 풍력단지의 3D 시각화부터 해석 결과 수신까지.<br>분리된 데이터를 하나의 시뮬레이션 경험으로 연결했습니다.</p><div class="tags"><span>Unity</span><span>gRPC</span><span>Python</span><span>MariaDB</span></div><div class="role-line"><span>담당</span>Unity 3D 시각화 · 시뮬레이션 통합 플랫폼</div>
-              <details class="case-study"><summary>문제 해결 과정 보기<span aria-hidden="true">+</span></summary><div class="case-body"><h4>대규모 씬에서도 안정적인 렌더링</h4><p>풍력터빈과 계류선을 함께 표시하는 씬에 거리 기반 LOD, 오브젝트 풀링, MaterialPropertyBlock을 적용해 렌더링 부하를 관리했습니다.</p><h4>해석 데이터와 인터페이스 연결</h4><p>Python 백엔드와 협업해 gRPC 통신을 연동하고, MariaDB에 적재되는 결과를 테이블과 차트에 반영했습니다. 프로젝트·단지·터빈의 계층에 맞춰 시뮬레이션 실행부터 결과 확인까지 이어지는 화면을 구성했습니다.</p><h4>구조를 고려한 통합</h4><p>대규모 단지 씬, 개별 터빈 씬, 2D UI를 통합 관리하고 대시보드·시뮬레이션·모니터링·비교분석 탭을 구현했습니다.</p><figure><img src="assets/windfarm-scene.webp" alt="해양 환경에 배치된 부유식 풍력터빈 3D 화면" width="656" height="370" loading="lazy"><figcaption>해양 환경과 부유식 풍력터빈 시각화</figcaption></figure><p class="case-note">후속 과제: 풍황 데이터 전처리 및 HAWC2 해석 결과 연동.</p></div></details>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="unity">
-            <button class="project-image slate-image" data-zoom="assets/mooring-viewer.webp" data-caption="탈착형 계류시스템 — WinForms에 통합한 Unity 3D 뷰어" aria-label="계류시스템 3D 뷰어 화면 확대"><span class="image-label">INTEGRATED 3D VIEWER</span><img src="assets/mooring-viewer.webp" alt="입력 편집 패널과 Unity 3D 결과 뷰어를 통합한 WinForms 프로그램" width="644" height="347"><span class="zoom-badge" aria-hidden="true">확대 보기 <b>+</b></span></button>
-            <div class="project-content"><div class="project-meta"><span>SI · Desktop / 3D</span><span>2025.04 — 2025.05</span></div><h3>탈착형 계류시스템<br>수치해석 통합 GUI</h3><p>텍스트 파일 편집, 솔버 실행, 결과 확인을 한곳에서.<br>수치해석의 전체 흐름을 하나의 프로그램으로 만들었습니다.</p><div class="tags"><span>C#</span><span>WinForms</span><span>DevExpress</span><span>Unity</span></div><div class="role-line"><span>담당</span>입력·실행 자동화 · Unity 뷰어 임베딩</div>
-              <details class="case-study"><summary>문제 해결 과정 보기<span aria-hidden="true">+</span></summary><div class="case-body"><h4>수작업 입력과 실행을 하나의 흐름으로</h4><p>메모장에서 편집하던 포트란 입력 파일을 DevExpress 기반 입력 탭으로 전환하고 SQLite에 연동했습니다. 수치 모델에 따라 3개의 솔버를 순차 실행하고, 다중 실행을 지원하는 구조를 구현했습니다.</p><h4>데스크톱 UI 안에 3D 결과 통합</h4><p>Unity 빌드 뷰어를 WinForms에 임베드해 입력·실행·2D/3D 결과 확인을 단일 프로그램에서 처리하도록 구성했습니다.</p><h4>하중 분포를 읽을 수 있는 시각화</h4><p>계류선의 Node·Element 좌표를 파싱해 LineRenderer로 연결했습니다. 하중 데이터를 5단계 레인보우 컬러맵으로 표현하고, 시간과 컬럼 선택에 따라 변화하는 애니메이션 및 수치 테이블을 함께 제공했습니다.</p><figure><img src="assets/mooring-model.webp" alt="계류시스템 구조 모델을 표시하는 통합 뷰어" width="626" height="336" loading="lazy"><figcaption>수치 모델을 확인하는 통합 3D 뷰어</figcaption></figure></div></details>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="web">
-            <button class="project-image light-image" data-zoom="assets/model-test-dashboard.webp" data-caption="해양구조물 모형시험 — 통합 관리 대시보드" aria-label="모형시험 통합 관리 화면 확대"><span class="image-label">WORKFLOW & MANAGEMENT</span><img src="assets/model-test-dashboard.webp" alt="모형시험의 진행 상태와 업무 정보를 표시하는 웹 대시보드" width="622" height="486"><span class="zoom-badge" aria-hidden="true">확대 보기 <b>+</b></span></button>
-            <div class="project-content"><div class="project-meta"><span>SI · Web Frontend</span><span>2023.09 — 2024.08</span></div><h3>해양구조물 모형시험<br>통합 관리 웹</h3><p>시험 의뢰부터 계획, 수행, 결과 관리까지.<br>복잡한 연구 업무를 일관된 웹 워크플로우로 정리했습니다.</p><div class="tags"><span>React</span><span>Java 연동</span><span>Oracle DB 연동</span></div><div class="role-line"><span>담당</span>React 프론트엔드 전담 개발</div>
-              <details class="case-study"><summary>문제 해결 과정 보기<span aria-hidden="true">+</span></summary><div class="case-body"><h4>다양한 시험 조건을 일관된 입력으로</h4><p>연구원 정보, 파도 종류, 센서 구성, 실험 대상체와 환경 조건을 표준화한 React 컴포넌트 기반 입력 화면으로 구현했습니다.</p><h4>시험 계획부터 진행 상황까지</h4><p>Oracle DB 데이터를 활용하는 시험 행렬 생성 흐름과 연동하고, 단계별 진행 현황을 순차적으로 확인하는 화면을 구성했습니다. 외주 프로젝트별 실험 자원을 독립적으로 관리하도록 지원했습니다.</p><h4>운영을 위한 관리 도구</h4><p>사용자, 자원 분류, 기관 정보를 관리할 수 있는 어드민 전용 화면을 별도로 구현했습니다.</p><figure><img class="portrait-shot" src="assets/model-test-form.webp" alt="실험 조건과 장비를 입력하는 모형시험 계획 화면" width="573" height="637" loading="lazy"><figcaption>표준화된 시험 계획 입력 화면</figcaption></figure></div></details>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="web">
-            <button class="project-image light-image lidar-image" data-zoom="assets/lidar-dashboard.webp" data-caption="부유식 라이다 — 풍황 데이터 실시간 모니터링" aria-label="라이다 실시간 모니터링 화면 확대"><span class="image-label">REAL-TIME MONITORING</span><img src="assets/lidar-dashboard.webp" alt="풍속 시계열 차트와 풍향 장미도를 표시하는 실시간 모니터링 웹" width="677" height="477"><span class="zoom-badge" aria-hidden="true">확대 보기 <b>+</b></span></button>
-            <div class="project-content"><div class="project-meta"><span>SI · Web / Visualization</span><span>2023.09 — 2023.11</span></div><h3>부유식 라이다<br>실시간 모니터링 웹</h3><p>해상에서 수집되는 풍황 데이터를 한눈에.<br>계측 데이터의 특성에 맞는 차트와 3D 화면을 구현했습니다.</p><div class="tags"><span>React</span><span>Python</span><span>Three.js</span><span>MariaDB</span></div><div class="role-line"><span>담당</span>데이터 시각화 · 3D 실시간 렌더링</div>
-              <details class="case-study"><summary>문제 해결 과정 보기<span aria-hidden="true">+</span></summary><div class="case-body"><h4>장비별 데이터를 목적에 맞게 표현</h4><p>Ubuntu 서버의 Python REST API를 통해 MariaDB에 적재된 풍속·풍향·난류강도 데이터를 수신했습니다. 라이다, Weather Tower, Weather Station 등 장비별 특성에 맞춰 Rose·Bar·Scatter Chart로 시각화했습니다.</p><h4>그래프와 수치, 움직임을 함께</h4><p>차트와 동일한 데이터를 테이블로 제공해 정량적 분석을 지원했습니다. Three.js로 해상 부유 지표의 움직임을 실시간 렌더링해 자세와 거동을 직관적으로 확인할 수 있도록 구현했습니다.</p><figure><img src="assets/lidar-analysis.webp" alt="라이다 데이터 비교 테이블과 산점도 분석 화면" width="584" height="505" loading="lazy"><figcaption>계측 데이터 비교·분석 화면</figcaption></figure></div></details>
-            </div>
-          </article>
-        </div>
-        
-      </div>
-    </section>
-
-    <section class="section about-section" id="about" aria-labelledby="about-title">
-      <div class="container about-grid">
-        <div class="about-copy"><p class="eyebrow">ABOUT ME</p><h2 id="about-title">화면 너머의 구조까지<br>이해하며 만듭니다.</h2><p>3D 공간에서 데이터가 어떻게 흐르고 반응하는지에 관심이 있습니다. Unity, React, Python을 실무에 적용하며 시각화와 인터페이스, 서버 사이의 연결을 경험했습니다.</p><p>기능을 구현하는 것만큼 구조를 명확하게 설계하는 일을 중요하게 생각합니다. 다른 기술을 사용하는 동료와 데이터와 API의 흐름을 함께 논의하며, 확장하고 유지하기 좋은 시스템을 지향합니다.</p><a class="text-link" href="https://what-co.tistory.com/" target="_blank" rel="noopener noreferrer">개발 기록 읽기</a>
-          <div class="timeline"><div><span class="timeline-year">EXPERIENCE</span><h3>바론시스템 기업부설연구소</h3><p>산업용 3D 시뮬레이션 · 웹 프론트엔드 개발</p><small>2023년 입사 · 국가 R&D 및 SI 프로젝트 수행</small></div><div><span class="timeline-year">INTERNSHIP</span><h3>바론시스템 기업부설연구소</h3><p>Python 백엔드·DOE 알고리즘 연구 / React 개발 참여</p><small>2023.01 — 02 · 2023.07 — 08</small></div><div><span class="timeline-year">EDUCATION</span><h3>대전대학교</h3><p>정보통신·전자공학과 학사</p><small>2020.03 — 2024.02</small></div></div>
-        </div>
-        <div class="skills-panel"><p class="eyebrow">MY TOOLKIT</p><div class="skill-group"><span class="skill-symbol" aria-hidden="true">◇</span><div><h3>Simulation & Graphics</h3><p>Unity · C# · .NET · Three.js</p><ul><li>산업용 3D 시각화 및 시뮬레이션</li><li>LOD · Object Pooling · MaterialPropertyBlock</li><li>LineRenderer · 하중 데이터 컬러맵</li></ul></div></div><div class="skill-group"><span class="skill-symbol" aria-hidden="true">▤</span><div><h3>Interface & Application</h3><p>React · JavaScript · WinForms · DevExpress</p><ul><li>업무 워크플로우와 실시간 대시보드</li><li>재사용 가능한 컴포넌트 기반 UI</li><li>WinForms–Unity 통합 인터페이스</li></ul></div></div><div class="skill-group"><span class="skill-symbol" aria-hidden="true">⌁</span><div><h3>Data & Communication</h3><p>Python · gRPC · REST API</p><ul><li>MariaDB · MySQL · SQLite · Oracle DB</li><li>해석·계측 데이터 파싱 및 전처리</li><li>Windows Server · Ubuntu · Git · SVN</li></ul></div></div><div class="toolkit-footnote">도구를 선택하기 전에, 데이터의 흐름과 문제의 구조를 먼저 봅니다.</div></div>
-      </div>
-    </section>
-
-    <section class="section playground-section" id="playground" aria-labelledby="playground-title">
-      <div class="container"><div class="section-heading"><div><p class="eyebrow">BEYOND WORK</p><h2 id="playground-title">호기심을 코드로</h2></div><p>작게 실험하고, 직접 플레이하며 배웁니다.<br>GitHub에 공개한 개인 프로젝트입니다.</p></div>
-        <div class="lab-grid"><article class="lab-card"><div class="lab-art game-art" aria-hidden="true"><div class="game-tile tile-a">●<span>MERGE</span></div><div class="game-tile tile-b">◒<span>PHYSICS</span></div><div class="game-tile tile-c"><i>● ●<br>● ● ●</i><span>PUZZLE</span></div></div><div class="lab-body"><p class="eyebrow">UNITY · C# · WEBGL</p><h3>WebGL Playground</h3><p>머지 카페, 수박게임, 버블슈터를 모은 브라우저 게임 허브. 머지·경제·저장 시스템, 2D 물리, 육각 격자 퍼즐을 실험합니다.</p><div class="lab-links"><a class="button primary small" href="https://dohnn-0203.github.io/WebGL_Playground/" target="_blank" rel="noopener noreferrer">직접 플레이</a><a class="text-link" href="https://github.com/dohnn-0203/WebGL_Playground" target="_blank" rel="noopener noreferrer">소스 코드</a></div></div></article>
-        <article class="lab-card"><div class="lab-art chess-art" aria-hidden="true"><div class="chess-board"><span>♜</span><span>♞</span><span>♝</span><span>♚</span><span></span><span>♟</span><span></span><span></span><span></span><span></span><span>♙</span><span></span><span>♖</span><span></span><span>♘</span><span>♔</span></div><span class="chess-caption">THINK. MOVE. REPEAT.</span></div><div class="lab-body"><p class="eyebrow">UNITY · C# · GAME LOGIC</p><h3>Chess</h3><p>합법 이동과 체크 판정부터 캐슬링, 앙파상, 폰 승급까지. 체스의 규칙을 코드로 옮기고 상태와 규칙의 구조를 나눈 프로젝트입니다.</p><div class="lab-links"><a class="button secondary small" href="https://github.com/dohnn-0203/Chess" target="_blank" rel="noopener noreferrer">GitHub에서 보기</a></div></div></article></div>
-        <a class="more-labs" href="https://github.com/dohnn-0203/unity_playground" target="_blank" rel="noopener noreferrer"><span><strong>unity_playground</strong> 작은 Unity 실험들을 쌓아가는 또 하나의 공간</span><span>저장소 보기</span></a>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-inner"><div><p class="eyebrow">LET'S CONNECT</p><h2 id="contact-title">함께 풀어갈 문제가 있다면.</h2><p>프로젝트와 개발에 관한 이야기를 기다립니다.</p></div><div class="contact-actions"><a class="email-link" href="mailto:dohnn0203@gmail.com">dohnn0203@gmail.com</a><div><button class="copy-email" type="button" data-email="dohnn0203@gmail.com">이메일 복사</button><a href="https://github.com/dohnn-0203" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://what-co.tistory.com/" target="_blank" rel="noopener noreferrer">Blog</a></div><p class="copy-status" role="status" aria-live="polite"></p></div></div></section>
   </main>
-  <footer><div class="container footer-inner"><span>© <span id="year">2026</span> 김도현</span><span>Built with clarity. Made to connect.</span><a href="#home">맨 위로</a></div></footer>
+  <div class="page-footer container"><span>© <span id="year">2026</span> 김도현</span><a href="#home">맨 위로</a></div>
   <dialog id="image-dialog" aria-labelledby="image-caption"><button class="dialog-close" aria-label="확대 이미지 닫기">닫기 <span aria-hidden="true">×</span></button><img src="assets/windfarm-analysis.webp" alt=""><p id="image-caption"></p></dialog>
 </body>
 </html>

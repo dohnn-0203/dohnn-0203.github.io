@@ -1,47 +1,4 @@
 'use strict';
-
-const menuButton = document.querySelector('.menu-toggle');
-const navigation = document.querySelector('#navigation');
-function closeMenu() {
-  menuButton.setAttribute('aria-expanded', 'false');
-  menuButton.setAttribute('aria-label', '메뉴 열기');
-  navigation.classList.remove('open');
-}
-menuButton.addEventListener('click', () => {
-  const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
-  menuButton.setAttribute('aria-expanded', String(!isOpen));
-  menuButton.setAttribute('aria-label', isOpen ? '메뉴 열기' : '메뉴 닫기');
-  navigation.classList.toggle('open', !isOpen);
-});
-navigation.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
-    closeMenu();
-    menuButton.focus();
-  }
-});
-document.addEventListener('click', event => {
-  if (!navigation.contains(event.target) && !menuButton.contains(event.target)) closeMenu();
-});
-
-const filterButtons = document.querySelectorAll('[data-filter]');
-const projects = document.querySelectorAll('[data-category]');
-filterButtons.forEach(button => button.addEventListener('click', () => {
-  const selected = button.dataset.filter;
-  let count = 0;
-  filterButtons.forEach(item => {
-    const active = item === button;
-    item.classList.toggle('active', active);
-    item.setAttribute('aria-pressed', String(active));
-  });
-  projects.forEach(project => {
-    const visible = selected === 'all' || project.dataset.category === selected;
-    project.hidden = !visible;
-    if (visible) count += 1;
-  });
-  document.querySelector('.project-count').textContent = `${count}개의 프로젝트`;
-}));
-
 const imageDialog = document.querySelector('#image-dialog');
 document.querySelectorAll('[data-zoom]').forEach(button => button.addEventListener('click', () => {
   const image = imageDialog.querySelector('img');
@@ -73,16 +30,15 @@ copyButton.addEventListener('click', async () => {
 });
 
 if ('IntersectionObserver' in window) {
-  const navLinks = [...navigation.querySelectorAll('a')];
+  const links = [...document.querySelectorAll('.contents nav a')];
   const observer = new IntersectionObserver(entries => {
-    const visible = entries.filter(entry => entry.isIntersecting);
-    if (!visible.length) return;
-    const id = visible[0].target.id;
-    navLinks.forEach(link => {
-      if (link.getAttribute('href') === `#${id}`) link.setAttribute('aria-current', 'location');
+    const entry = entries.find(item => item.isIntersecting);
+    if (!entry) return;
+    links.forEach(link => {
+      if (link.getAttribute('href') === `#${entry.target.id}`) link.setAttribute('aria-current', 'location');
       else link.removeAttribute('aria-current');
     });
-  }, { rootMargin: '-15% 0px -65% 0px', threshold: 0 });
-  document.querySelectorAll('main section[id]').forEach(section => observer.observe(section));
+  }, { rootMargin: '-12% 0px -65% 0px', threshold: 0 });
+  document.querySelectorAll('.document-section').forEach(section => observer.observe(section));
 }
 document.querySelector('#year').textContent = String(new Date().getFullYear());
